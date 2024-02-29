@@ -267,7 +267,7 @@ section {
   border-radius: 15px;
 }
 
-.Contacts .contacts-form {
+.Contacts form {
   width: 65%;
   margin: 50px auto auto;
   padding: 10px;
@@ -411,7 +411,7 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-  .Contacts .contacts-form {
+  .Contacts form {
     width: 100%;
   }
 }
