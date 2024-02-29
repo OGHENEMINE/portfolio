@@ -2,11 +2,9 @@ import { useContext, useState } from "react";
 import { TabContext } from "../contexts/ActiveTabContext";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ModeContext } from "../contexts/ModeContext";
 
 function Navbar() {
   const { ActiveTab, handleActiveTab } = useContext(TabContext);
-  const { mode, handleSetMode } = useContext(ModeContext);
   const listNav = ["Home", "Skills", "Projects", "Contacts"];
   const [mobileNav, setMobileNav] = useState(false);
 
