@@ -23,7 +23,7 @@ function Contacts() {
           <input
             name="email"
             id="email"
-            placeholder="Enter your name"
+            placeholder="Enter your email"
             type="email"
           />
         </div>
