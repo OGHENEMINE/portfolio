@@ -7,7 +7,8 @@ function Contacts() {
   return (
     <section className="Contacts" ref={refTab}>
       <h2 className="title">CONTACTS</h2>
-      <form className="contacts-form">
+      <form name="contact" data-netlify="true" className="contacts-form">
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="name">Name</label>
           <input
@@ -28,7 +29,11 @@ function Contacts() {
         </div>
         <div>
           <label htmlFor="message">Message</label>
-          <textarea placeholder="Enter your message" id="message" name="message"></textarea>
+          <textarea
+            placeholder="Enter your message"
+            id="message"
+            name="message"
+          ></textarea>
         </div>
         <button>Submit</button>
       </form>
