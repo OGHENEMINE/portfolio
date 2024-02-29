@@ -35,7 +35,7 @@ function Contacts() {
             name="message"
           ></textarea>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );
