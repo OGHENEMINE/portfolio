@@ -7,32 +7,32 @@ function Contacts() {
   return (
     <section className="Contacts" ref={refTab}>
       <h2 className="title">CONTACTS</h2>
-      <form className="contacts-form" method="POST" name="contact" data-netlify="true">
+      <form className="contacts-form" name="contact" netlify>
         <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="name">Name</label>
           <input
+            type="text"
             name="name"
             id="name"
             placeholder="Enter your name"
-            type="text"
           />
         </div>
         <div>
           <label htmlFor="email">Email</label>
           <input
+            type="email"
             name="email"
             id="email"
             placeholder="Enter your email"
-            type="email"
           />
         </div>
         <div>
           <label htmlFor="message">Message</label>
           <textarea
+            name="message"
             placeholder="Enter your message"
             id="message"
-            name="message"
           ></textarea>
         </div>
         <button type="submit">Submit</button>
