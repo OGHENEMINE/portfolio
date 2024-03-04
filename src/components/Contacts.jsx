@@ -7,7 +7,7 @@ function Contacts() {
   return (
     <section className="Contacts" ref={refTab}>
       <h2 className="title">CONTACTS</h2>
-      <form  name="contact" data-netlify="true">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="hidden" name="form-name" value="contact" />
         <div>
           <label htmlFor="name">Name</label>
